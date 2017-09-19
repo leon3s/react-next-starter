@@ -1,0 +1,18 @@
+{
+  "presets": ["es2015", "next/babel", "stage-2"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "_components": "./components",
+        "_containers": "./containers",
+        "_actions": "./actions",
+        "_reducers": "./reducers",
+        "_utils": "./utils",
+        "_package.json": "./package.json",
+        "_styles": "./styles",
+        "_store": "./store",
+        "react-native": "react-native-web"
+      }
+    }]
+  ]
+}
