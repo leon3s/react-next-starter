@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "next build",
+    "start": "babel-node pm2.js",
+    "production": "NODE_ENV=production npm start",
+    "development": "NODE_ENV=development npm start",
+    "build:production": "NODE_ENV=production next build"
   },
-  "author": "",
+  "author": "leon3s",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.3",
