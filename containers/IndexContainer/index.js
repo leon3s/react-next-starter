@@ -10,7 +10,7 @@ import meActions from '_actions/me';
 
 import style from './style';
 
-class IndexComponent extends React.Component {
+class IndexContainer extends React.Component {
   static propTypes = {
     me: PropTypes.shape({
       name: PropTypes.string,
@@ -53,4 +53,4 @@ export default connect(state => ({
   me: state.me,
 }), dispatch => ({
   meActions: bindActionCreators(meActions, dispatch),
-}))(IndexComponent);
+}))(IndexContainer);

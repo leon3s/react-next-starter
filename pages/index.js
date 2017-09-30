@@ -2,12 +2,12 @@ import React from 'react';
 
 import connect from '_utils/connect';
 
-import IndexComponent from '_containers/IndexComponent';
+import IndexContainer from '_containers/IndexContainer';
 
 // Page must be class extending from React.Component to work properly..
 class IndexPage extends React.Component {
   render() {
-    return <IndexComponent />;
+    return <IndexContainer />;
   }
 }
 
