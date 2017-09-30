@@ -1,5 +1,5 @@
 {
-  "presets": ["es2015", "next/babel", "stage-2"],
+  "presets": [["env"], "next/babel", "stage-2"],
   "plugins": [
     ["module-resolver", {
       "alias": {
