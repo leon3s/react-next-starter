@@ -29,6 +29,10 @@ export default class Input extends React.PureComponent {
   $onChange = new Rxjs.Subject();
 
   render() {
-    return <TextInput {...this.props} onChange={this.onChange} />;
+    const { onFinish, ...otherProps } = this.props;
+    return (<TextInput
+      {...otherProps}
+      onChange={this.onChange}
+    />);
   }
 }
